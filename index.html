@@ -8,17 +8,53 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas></canvas>
-    <form>
-        <div class="drawing-tools">
-            <label for="line-width">line width: </label>
-            <input id="line-width" type="number" min="1" max="10" value="5" />
-        </div>
-        <div class="drawing-tools">
-            <label for="color">Color</label>
+    <header>
+        <h1>Meme Maker</h1>
+    </header>
+    <main>    
+        <div class="color">
             <input id="color" type="color">
+            <div class="color-options">
+                <div class="color-option" style="background-color:#FEA47F" data-color="#FEA47F"></div>
+                <div class="color-option" style="background-color:#25CCF7" data-color="#25CCF7"></div>
+                <div class="color-option" style="background-color:#EAB543" data-color="#EAB543"></div>
+                <div class="color-option" style="background-color:#55E6C1" data-color="#55E6C1"></div>
+                <div class="color-option" style="background-color:#CAD3C8" data-color="#CAD3C8"></div>
+                <div class="color-option" style="background-color:#F97F51" data-color="#F97F51"></div> 
+                <div class="color-option" style="background-color:#1B9CFC" data-color="#1B9CFC"></div>
+                <div class="color-option" style="background-color:#F8EFBA" data-color="#F8EFBA"></div>
+                <div class="color-option" style="background-color:#58B19F" data-color="#58B19F"></div>
+                <div class="color-option" style="background-color:#2C3A47" data-color="#2C3A47"></div>
+            </div>
+            <div class="color-options">
+                <div class="color-option" style="background-color:#B33771" data-color="#B33771"></div>
+                <div class="color-option" style="background-color:#3B3B98" data-color="#3B3B98"></div>
+                <div class="color-option" style="background-color:#FD7272" data-color="#FD7272"></div>
+                <div class="color-option" style="background-color:#9AECDB" data-color="#9AECDB"></div>
+                <div class="color-option" style="background-color:#D6A2E8" data-color="#D6A2E8"></div>
+                <div class="color-option" style="background-color:#6D214F" data-color="#6D214F"></div>
+                <div class="color-option" style="background-color:#182C61" data-color="#182C61"></div>
+                <div class="color-option" style="background-color:#FC427B" data-color="#FC427B"></div> 
+                <div class="color-option" style="background-color:#BDC581" data-color="#BDC581"></div>
+                <div class="color-option" style="background-color:#82589F" data-color="#82589F"></div>
+            </div>
         </div>
-    </form>
+        <canvas></canvas>
+        
+        <div class="drawing-tools">
+            <input id="line-width" type="range" min="1" max="10" value="5" />
+            <button id="mode-btn">🖌 Fill</button>
+            <button id="delete-btn">🔥🌊💔🧨💣🗑</button>
+            <button id="erase-btn">🗞 Eraser</button>
+            <input type="text" placeholder="Add text here... :)" id="text">
+            <label for="file">
+                Add Photo
+                <input type="file" accept="image/*" id="file">
+            </label>
+            <button id="save">📥</button>
+        </div>
+    </main>
+    <footer>Gwangwoo Lee &copy; 2023</footer>
     <script src="app.js"></script>
 </body>
 </html>
