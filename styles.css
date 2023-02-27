@@ -17,7 +17,7 @@ h1{
     margin-bottom: 5px;
 }
 
-main,footer{
+main,footer {
     display: flex;
     gap: 20px;
     justify-content: space-between;
